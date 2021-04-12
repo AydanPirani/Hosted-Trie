@@ -45,6 +45,18 @@ class TrieNode:
         else:
             del_loc.pop(del_key, None)        
 
+    def search(self, string):
+        current = self
+        for s in string:
+            current = current.children
+            if s not in current:
+                return False
+            
+            current = current[s]
+
+        return current.has_entry
+
+
     # Stack-based implementation to print everything in trie
     def display(self, depth = 0):
         if self.value == "HEAD":
@@ -62,10 +74,13 @@ t = TrieNode()
 t.add("git")
 t.add("github")
 t.add("giraffe")
+t.add("girth")
 t.display()
 
 # t.delete("git")
-t.delete("github")
+# t.delete("github")
 # t.delete("giraffe")
 # t.delete("abcd")
-t.display()
+# t.display()
+
+print(t.search("girth"))
