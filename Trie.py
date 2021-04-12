@@ -49,14 +49,13 @@ class TrieNode:
     def display(self, depth = 0):
         if self.value == "HEAD":
             depth -= 1
+            print("\n")
         else:
             print("-"*depth + self.value + (" (T)" if self.has_entry else ""))
         # Recursively displays values for every node in the trie
         for char, node in self.children.items():
             node.display(depth+1)
         
-        if depth == -1:
-            print("\n")
 
 
 t = TrieNode()
