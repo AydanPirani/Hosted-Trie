@@ -41,7 +41,7 @@ class TrieNode:
 
         # If more children exist, then change to false, else delete from del_loc
         if len(current.children) > 0:
-            del_loc[del_key].has_entry = False
+            current.has_entry = False
         else:
             del_loc.pop(del_key, None)        
 
@@ -60,14 +60,13 @@ class TrieNode:
 
 
 t = TrieNode()
-t.add("abcd")
-t.add("giraffe")
 t.add("git")
 t.add("github")
-
+t.add("giraffe")
 t.display()
+
 # t.delete("git")
-# t.delete("github")
+t.delete("github")
 # t.delete("giraffe")
 # t.delete("abcd")
-# t.display()
+t.display()
