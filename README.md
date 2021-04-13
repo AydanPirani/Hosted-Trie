@@ -41,4 +41,3 @@ Completely resets the state of the trie (for debugging purposes). Use only if yo
 ```
 $ curl -X GET aydanpirani.pythonanywhere.com/clear
 ```
-aydanpirani.pythonanywhere.com/
