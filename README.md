@@ -1,5 +1,5 @@
 # Hosted-Trie
-The final take-home project, made for Slingshot's Fellowship program.
+The final take-home project, made for Slingshot's Fellowship program. This project had two parts: a cloud-based server (found in the backend folder) and a CLI (found in the client-side folder). The backend was a Flask-based Python app, hosted on PythonAnywhere at [aydanpirani.pythonanywhere.com/](aydanpirani.pythonanywhere.com). 
 
 ### Table of Contents
 [REST Endpoints/CURL Testing](#rest-endpointscurl-testing)  
@@ -41,3 +41,4 @@ Completely resets the state of the trie (for debugging purposes). Use only if yo
 ```
 $ curl -X GET aydanpirani.pythonanywhere.com/clear
 ```
+aydanpirani.pythonanywhere.com/
