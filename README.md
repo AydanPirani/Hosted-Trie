@@ -1,6 +1,10 @@
 # Hosted-Trie
 The final take-home project, made for Slingshot's Fellowship program.
-[rest-endpoints/curl-testing](#rest-endpointscurl-testing)
+
+### Table of Contents
+[REST Endpoints/CURL Testing](#rest-endpointscurl-testing)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [/add](###add)
 
 # REST Endpoints/CURL Testing
 ### /add
