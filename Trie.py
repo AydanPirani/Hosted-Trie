@@ -1,10 +1,11 @@
 class TrieNode:
     def __init__(self, char=None):
-        self.value = char if char else "HEAD"   # Value
+        self.value = char if char else ""   # Value
         self.children = {}  # Children/child-nodes
         self.has_entry = False  # Whether or not this marks the end of a word
 
     def add(self, string):
+        string = string.lower()
         current = self
         # Iterate through every character, and add it if it exists
         for s in string:
@@ -20,6 +21,8 @@ class TrieNode:
         # Test if there is no string to delete
         if string == "":
             return
+
+        string = string.lower()
 
         current = self
         del_key, del_loc = string[0], self.children
@@ -45,7 +48,9 @@ class TrieNode:
         else:
             del_loc.pop(del_key, None)        
 
+    # Search if the string has been entered in the structure
     def search(self, string):
+        string = string.lower()
         current = self
         for s in string:
             current = current.children
@@ -56,31 +61,37 @@ class TrieNode:
 
         return current.has_entry
 
+    # Return all potential "autocompletes" with given prefix
+    def autocomplete(self, string):
+        current = self
+        for s in string:
+            current = current.children
+            if s not in current:
+                return []
+            current = current[s]
+        
+        if len(string) > 0:
+            string = string[:-1]
 
+        stack, words = [(current, string)], []
+        while len(stack) > 0:
+            node, word = stack.pop()
+            word += node.value
+            # Might seem like O(N^2), but is a DFS, thus O(N)
+            for child in node.children: 
+                stack.append((node.children[child], word))  
+            if node.has_entry:
+                words.append(word)
+              
+        return words
+        
     # Stack-based implementation to print everything in trie
     def display(self, depth = 0):
-        if self.value == "HEAD":
+        if self.value == "":
             depth -= 1
             print("\n")
         else:
-            print("-"*depth + self.value + (" (T)" if self.has_entry else ""))
+            print("-"*depth + self.value + (" (End)" if self.has_entry else ""))
         # Recursively displays values for every node in the trie
         for char, node in self.children.items():
             node.display(depth+1)
-        
-
-
-t = TrieNode()
-t.add("git")
-t.add("github")
-t.add("giraffe")
-t.add("girth")
-t.display()
-
-# t.delete("git")
-# t.delete("github")
-# t.delete("giraffe")
-# t.delete("abcd")
-# t.display()
-
-print(t.search("girth"))
