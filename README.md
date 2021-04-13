@@ -7,8 +7,8 @@ The final take-home project, made for Slingshot's Fellowship program.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [/delete](#delete)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [/search](#search)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [/autocomplete](#autocomplete)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [/display](#display)
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [/display](#display)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [/clear](#clear)
 
 # REST Endpoints/CURL Testing
 ### /add
