@@ -1,6 +1,6 @@
 # Hosted-Trie
 The final take-home project, made for Slingshot's Fellowship program.
-[REST Endpoints/CURL Testing](#REST Endpoints/CURL Testing "Goto REST Endpoints/CURL Testing")
+[rest-endpoints/curl-testing](#rest-endpoints/curl-testing)
 
 # REST Endpoints/CURL Testing
 ### /add
