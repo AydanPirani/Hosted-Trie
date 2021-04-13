@@ -23,7 +23,7 @@ Takes in a passed dictionary of the form {"string":"prefix"}, returns all existi
 CURL -X POST -F "string=prefix" aydanpirani.pythonanywhere.com/autocomplete
 ```
 ### /display
-Prints the currenntly-existing trie to the user's console.
+Prints the currently-existing trie to the user's console.
 ```
 CURL -X GET aydanpirani.pythonanywhere.com/display
 ```
