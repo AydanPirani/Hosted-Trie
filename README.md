@@ -37,7 +37,7 @@ Prints the currently-existing trie to the user's console.
 CURL -X GET aydanpirani.pythonanywhere.com/display
 ```
 ### /clear
-Completely resets the state of the trie.
+Completely resets the state of the trie (for debugging purposes). Use only if you are certain you want to delete the trie.
 ```
 CURL -X GET aydanpirani.pythonanywhere.com/clear
 ```
