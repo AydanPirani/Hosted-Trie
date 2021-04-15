@@ -1,0 +1,27 @@
+{
+  "name": "@aydan/trie-cli",
+  "version": "1.2.0",
+  "description": "A CLI for Slingshot's Fellowship program.",
+  "main": "src/index.js",
+  "bin": {
+    "@aydan/trie-cli": "bin/trie-cli",
+    "trie-cli": "bin/trie-cli"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CLI",
+    "trie"
+  ],
+  "author": "Aydan Pirani",
+  "license": "MIT",
+  "dependencies": {
+    "arg": "^5.0.0",
+    "esm": "^3.2.25",
+    "inquirer": "^8.0.0"
+  }
+}
