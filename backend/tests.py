@@ -72,7 +72,6 @@ def test_display():
     trie.add("slingshot")
     assert trie.display() == "\ng\n-i\n--t*\n---h\n----u\n-----b*\ns\n-l\n--i\n---n\n----g\n-----s\n------h\n-------o\n--------t*\n", \
         "Test case display3 failed."
-    print(repr(trie.display()))
 
 if __name__ == "__main__":
     test_add()
