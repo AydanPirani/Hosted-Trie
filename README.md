@@ -1,5 +1,5 @@
 # Hosted-Trie
-The final take-home project, made for Slingshot's Fellowship program. This project had two parts: a cloud-based server (found in the backend folder) and a CLI (found in the trie-cli folder). The backend was a Flask-based Python app, hosted on PythonAnywhere at [aydanpirani.pythonanywhere.com/](aydanpirani.pythonanywhere.com). 
+The final take-home project, made for Slingshot's Fellowship program. This project had two parts: a cloud-based server (found in the backend folder) and a CLI (found in the trie-cli folder). The backend was a Flask-based Python app, hosted on PythonAnywhere at [aydanpirani.pythonanywhere.com/](aydanpirani.pythonanywhere.com). Every time the user accesses the CLI and performs an operation, the CLI sends a HTTP request to the Flask server, and globally modifies the trie in-place (or returns the stringified values in the trie, depending on the operation performed).
 
 ### Table of Contents
 [CLI Installation and Usage](#cli-installation-and-usage)  
