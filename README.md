@@ -3,8 +3,8 @@ The final take-home project, made for Slingshot's Fellowship program. This proje
 
 ### Table of Contents
 [CLI Installation and Usage](#cli-installation-and-usage)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [/installation](#installation)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [/usage](#usage)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [installation](#installation)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [usage](#usage)  
 [REST Endpoints/CURL Testing](#rest-endpointscurl-testing)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [/add](#add)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [/delete](#delete)  
@@ -28,17 +28,17 @@ $ sudo npm uninstall -g @aydan/trie-cli
 The CLI be run with and without arguments.
 
 ### With Arguments
-To run the CLI with arguments, the following format is used, where OPERATION is replaced by one of the following ("add", "delete", "search", "autocomplete", "display"). "Display" is the only standalone command in the context of arguments - all other arguments require an additional parameter WORD (user will be prompted if it is not included).
+To run the CLI with arguments, the following format is used, where OPERATION is replaced by one of the following ["add", "delete", "search", "autocomplete", "display"]. "Display" is the only standalone command in the context of arguments - all other arguments require an additional parameter STRING, which is required to perform the operation. If there is no second argument provided, the user will be prompted to enter a valid string.
 ```
 # All non-display operation
-$ trie-cli OPERATION WORD
+$ trie-cli OPERATION STRING
 
 # Display operation
 $ trie-cli display
 ```
 
 ### Without Arguments
-The user will be prompted to select an operation and a word (if needed). The following command can be used:
+The user will be prompted to select an operation and a string (if needed). The following command can be used:
 ```
 $ trie-cli
 ```
