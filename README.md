@@ -43,6 +43,7 @@ $ trie-cli OPERATION STRING
 $ trie-cli display
 ```
 # REST Endpoints/CURL Testing
+Trie tests can be found within Backend/tests.py - this file can be run to test the validness of the trie data structure. Global tests can be run with the following CURL commands: 
 ### /add
 Takes in a passed dictionary of the form {"string":"word"}, adds word to the trie.
 ```
