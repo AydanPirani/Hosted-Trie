@@ -27,6 +27,12 @@ $ sudo npm uninstall -g @aydan/trie-cli
 ## Usage  
 The CLI be run with and without arguments.
 
+### Without Arguments
+The user will be prompted to select an operation and a string (if needed). The following command can be used:
+```
+$ trie-cli
+```
+
 ### With Arguments
 To run the CLI with arguments, the following format is used, where OPERATION is replaced by one of the following: ["add", "delete", "search", "autocomplete", "display"]. "Display" is the only standalone command in the context of arguments - all other arguments require an additional parameter STRING, which is required to perform the operation. If there is no second argument provided, the user will be prompted to enter a valid string.
 ```
@@ -36,13 +42,6 @@ $ trie-cli OPERATION STRING
 # Display operation
 $ trie-cli display
 ```
-
-### Without Arguments
-The user will be prompted to select an operation and a string (if needed). The following command can be used:
-```
-$ trie-cli
-```
-
 # REST Endpoints/CURL Testing
 ### /add
 Takes in a passed dictionary of the form {"string":"word"}, adds word to the trie.
