@@ -3,8 +3,8 @@ The final take-home project, made for Slingshot's Fellowship program. This proje
 
 ### Table of Contents
 [CLI Installation and Usage](#cli-installation-and-usage)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [installation](#installation)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [usage](#usage)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Installation](#installation)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Usage](#usage)  
 [REST Endpoints/CURL Testing](#rest-endpointscurl-testing)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [/add](#add)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [/delete](#delete)  
