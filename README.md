@@ -1,5 +1,5 @@
 # Hosted-Trie
-The final take-home project, made for Slingshot's Fellowship program. This project had two parts: a cloud-based server (found in the backend folder) and a CLI (found in the client-side folder). The backend was a Flask-based Python app, hosted on PythonAnywhere at [aydanpirani.pythonanywhere.com/](aydanpirani.pythonanywhere.com). 
+The final take-home project, made for Slingshot's Fellowship program. This project had two parts: a cloud-based server (found in the backend folder) and a CLI (found in the trie-cli folder). The backend was a Flask-based Python app, hosted on PythonAnywhere at [aydanpirani.pythonanywhere.com/](aydanpirani.pythonanywhere.com). 
 
 ### Table of Contents
 [CLI Installation and Usage](#cli-installation-and-usage)  
