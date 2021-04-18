@@ -28,7 +28,7 @@ $ sudo npm uninstall -g @aydan/trie-cli
 The CLI be run with and without arguments.
 
 ### With Arguments
-To run the CLI with arguments, the following format is used, where OPERATION is replaced by one of the following ["add", "delete", "search", "autocomplete", "display"]. "Display" is the only standalone command in the context of arguments - all other arguments require an additional parameter STRING, which is required to perform the operation. If there is no second argument provided, the user will be prompted to enter a valid string.
+To run the CLI with arguments, the following format is used, where OPERATION is replaced by one of the following: ["add", "delete", "search", "autocomplete", "display"]. "Display" is the only standalone command in the context of arguments - all other arguments require an additional parameter STRING, which is required to perform the operation. If there is no second argument provided, the user will be prompted to enter a valid string.
 ```
 # All non-display operation
 $ trie-cli OPERATION STRING
