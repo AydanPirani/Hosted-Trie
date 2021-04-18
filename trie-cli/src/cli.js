@@ -1,10 +1,12 @@
 import inquirer from "inquirer";
+import axios from "axios";
+import formdata from "form-data";
 
-async function GetOperation(error="You didn't enter a valid operation. ") {
+async function GetOperation() {
     const answer = await inquirer.prompt({
         type: "list", 
         name: "operation",
-        message: error + "Please select an operation to perform.",
+        message: "You didn't enter a valid operation. Please select an operation to perform.",
         choices: ["add", "delete", "search", "autocomplete", "display"]
     })
     return answer["operation"]
@@ -38,17 +40,24 @@ export async function CLI(args) {
     let operation = ""
     let word = ""
 
-    if (args.length > 1 && VALID_OPS.has(args[0])) {
-        operation = args[0];
-        word = args[1];
-    } else if (args.length > 0 && VALID_OPS.has(args[0])) {
+    if (args.length > 0 && VALID_OPS.has(args[0])) {
         operation = args[0]
-        word = await GetWord();
     } else {
         operation = await GetOperation();
+    }
+
+    if (args.length > 1 || operation == "display") {
+        word = args[1] || ""
+    } else {
         word = await GetWord();
     }
 
-    console.log(operation)
-    console.log(word)
+    const formData = new formdata();
+
+    formData.append("string", word);
+    axios.post("https://aydanpirani.pythonanywhere.com/"+operation, formData, {
+     headers: formData.getHeaders()
+    })
+    .then(response => console.log(response.data))
+    .catch(error => console.log(error))
 }
