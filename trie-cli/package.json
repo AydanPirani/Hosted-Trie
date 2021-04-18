@@ -1,6 +1,6 @@
 {
   "name": "@aydan/trie-cli",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "A CLI for Slingshot's Fellowship program.",
   "main": "src/index.js",
   "bin": {
